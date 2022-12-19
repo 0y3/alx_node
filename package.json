@@ -9,15 +9,19 @@
     "lint": "eslint \"src/**/*.{js,ts}\" --fix",
     "format": "prettier .prettierrc --write \"src/**/*.{js,ts}\"",
     "check": "prettier .prettierrc  --check \"src/**/*.{js,ts}\"",
-    "build": "npx tsc"
+    "build": "npx tsc",
+    "jasmine": "jasmine"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jasmine": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
     "tsc": "^2.0.4"
   },
   "devDependencies": {
+    "@types/jasmine": "^4.3.1",
     "@types/node": "^18.11.15",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "eslint": "^8.29.0",

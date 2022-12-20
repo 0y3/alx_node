@@ -7,12 +7,8 @@ const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 const port = 3000;
 app.get('/api', (req, res) => {
-    res.send('server, working');
+    res.send('server working');
 });
 app.listen(port, () => {
     console.log(`server started at http://localhost:${port}`);
 });
-// const myFunc = (num: number): number => {
-//     return num * num;
-//   };
-//   export default myFunc;

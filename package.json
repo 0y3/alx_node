@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "src/index.ts",
+    "start": "nodemon src/index.ts",
     "test": "npm run build && npm run jasmine",
     "lint": "eslint \"src/**/*.{js,ts}\" --fix",
     "format": "prettier .prettierrc --write \"src/**/*.{js,ts}\"",
@@ -16,11 +16,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
     "jasmine": "^4.5.0",
     "jasmine-spec-reporter": "^7.0.0",
     "supertest": "^6.3.3"
   },
   "devDependencies": {
+    "@types/express": "^4.17.15",
     "@types/jasmine": "^4.3.1",
     "@types/node": "^18.11.15",
     "@types/supertest": "^2.0.12",
@@ -30,6 +32,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.20",
     "prettier": "^2.8.1",
     "ts-node": "^10.9.1"
   }
